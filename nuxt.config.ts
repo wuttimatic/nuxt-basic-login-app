@@ -2,5 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ["@prisma/nuxt", "@sidebase/nuxt-auth"]
+  modules: ["@prisma/nuxt", "@sidebase/nuxt-auth"],
+  auth: {
+    globalAppMiddleware: true,
+  },
 })
