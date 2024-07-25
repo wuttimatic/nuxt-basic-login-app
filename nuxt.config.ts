@@ -6,4 +6,7 @@ export default defineNuxtConfig({
   auth: {
     globalAppMiddleware: true,
   },
+  prisma: {
+    installStudio: false
+  }
 })
